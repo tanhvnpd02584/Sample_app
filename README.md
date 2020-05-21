@@ -15,6 +15,8 @@ Things you may want to cover:
 
 * Database initialization
 
+asdasdsa
+
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)

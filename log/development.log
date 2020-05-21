@@ -1,0 +1,3253 @@
+Started GET "/" for ::1 at 2020-05-20 23:21:40 +0700
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mac/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mac/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.1ms | Allocations: 410)
+Completed 200 OK in 47ms (Views: 28.2ms | ActiveRecord: 0.0ms | Allocations: 2584)
+
+
+Started GET "/" for ::1 at 2020-05-20 23:28:45 +0700
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mac/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mac/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.2ms | Allocations: 295)
+Completed 200 OK in 38ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 1711)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:28:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 159)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.4
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error package.json: Name contains illegal characters
+error package.json: Name contains illegal characters
+
+Completed 500 Internal Server Error in 1712ms (ActiveRecord: 0.0ms | Allocations: 19159)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /Users/mac/Rails/chapter3,4,5/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:29:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 146)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2842)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:29:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 30)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1849)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:30:31 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 146)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2861)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:30:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 30)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1835)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:30:38 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.6ms | Allocations: 97)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2046)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:32:03 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 95)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4262)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/__header, application/__header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:        <%render "_header"%>
+    13:     <%= yield %>
+    14:   </body>
+    15: </html>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:32:16 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.6ms | Allocations: 95)
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1784)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4786)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+    1: <%= render "header" %>
+    2: <header class="navbar navbar-fixed-topnavbar-inverse">
+    3:  <div class="container">
+    4:        <%= link_to "sample app", "#", id: "logo" %>
+  
+app/views/layouts/_header.html.erb:1
+app/views/layouts/application.html.erb:12
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:32:47 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 99)
+  Rendered layouts/_header.html.erb (Duration: 128.1ms | Allocations: 64155)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms | Allocations: 67165)
+
+
+  
+ActionView::Template::Error (undefined method `partial' for #<#<Class:0x00007fc4e0a54e00>:0x00007fc4e0a4f540>):
+    1: <%= render partial "header" %>
+    2: <header class="navbar navbar-fixed-topnavbar-inverse">
+    3:  <div class="container">
+    4:        <%= link_to "sample app", "#", id: "logo" %>
+  
+app/views/layouts/_header.html.erb:1
+app/views/layouts/application.html.erb:12
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:32:51 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 124.9ms | Allocations: 63976)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms | Allocations: 65840)
+
+
+  
+ActionView::Template::Error (undefined method `partial' for #<#<Class:0x00007fc4e0a54e00>:0x00007fc4dd39c408>):
+    1: <%= render partial "header" %>
+    2: <header class="navbar navbar-fixed-topnavbar-inverse">
+    3:  <div class="container">
+    4:        <%= link_to "sample app", "#", id: "logo" %>
+  
+app/views/layouts/_header.html.erb:1
+app/views/layouts/application.html.erb:12
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:33:02 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.1ms | Allocations: 95)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms | Allocations: 66624)
+
+
+  
+ActionView::Template::Error (undefined method `partial' for #<#<Class:0x00007fc4dc748d28>:0x00007fc4dc743490>):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:        <%render partial "layouts/header"%>
+    13:     <%= yield %>
+    14:   </body>
+    15: </html>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:35:15 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.9ms | Allocations: 95)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2811)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:35:16 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1825)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 145)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2091)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 145)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4321)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:     <%render "header"%>
+    13:     <%= yield %>
+    14:   </body>
+    15: </html>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:48 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 145)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 222)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 3314)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 145)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 221)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 1974)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 1959)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 145)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 224)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 3297)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:35:59 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 1974)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:05 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 145)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 221)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 3306)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1974)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1959)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1959)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:36:08 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.8ms | Allocations: 95)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 67)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 2181)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 145)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 222)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3276)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1968)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 1965)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1967)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 146)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 221)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 1975)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:36:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1963)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:05 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 145)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 221)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1976)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1983)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1963)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1983)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 1963)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 584)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 3433)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2105)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2103)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2102)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:27 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 589)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 3440)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:27 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2087)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:27 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2092)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2090)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-20 23:37:30 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 95)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2181)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:37:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2087)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 583)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3286)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 156)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1957)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 155)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 1969)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 155)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1971)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1977)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 155)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1957)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1969)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:38:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 584)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4732)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_layouts.header, application/_layouts.header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render "layouts.header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:39:46 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 584)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4742)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_layouts.header, application/_layouts.header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render "layouts.header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:39:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 156)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2866)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_layouts.header, application/_layouts.header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render "layouts.header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:40:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 585)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 4743)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_layouts.header, application/_layouts.header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render "layouts.header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:40:29 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 587)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4745)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_layouts.header, application/_layouts.header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render "layouts.header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:40:29 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 332)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3333)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_layouts.header, application/_layouts.header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render "layouts.header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:40:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 584)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3439)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:40:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2089)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:40:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2092)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 222)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 722)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3564)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2216)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:08 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2213)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:08 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2223)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:08 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 2217)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:08 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2219)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2217)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2215)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2213)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2213)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:41:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 280)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2209)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:43:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 3.5ms | Allocations: 222)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2135)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3350)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:    </h2>
+     8:   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10:     <%render(:partial => "header")%>
+  
+app/views/static_pages/home.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:44:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1064)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2280)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% provide :title,"Home"%>
+    <%render "layouts/header"%>
+
+<div class="center jumbotron"> <h1>Welcome to the Sample App</h1>
+ <h2>This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
+   </h2>
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+    <%render (:partial => "header")%>
+
+
+
+):
+1:    
+2:    <% provide :title,"Home"%>
+3:        <%render "layouts/header"%>
+4:    
+5:    <div class="center jumbotron"> <h1>Welcome to the Sample App</h1>
+6:     <h2>This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
+7:       </h2>
+8:      <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+9:    </div>
+10:        <%render (:partial => "header")%>
+  
+app/views/static_pages/home.html.erb:10: syntax error, unexpected =>, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected ')', expecting `end'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected =>, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected ')', expecting `end'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected =>, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected ')', expecting `end'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected =>, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected ')', expecting `end'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected =>, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected ')', expecting `end'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected =>, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected ')', expecting `end'
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:44:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 222)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 578)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 66)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3439)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:44:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2089)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:44:59 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2090)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 588)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3449)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2087)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:05 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2094)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:05 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2090)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:21 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1691)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2896)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+    6:    </h2>
+    7:   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    8: </div>
+    9:     <%render "header"%>
+  
+app/views/static_pages/home.html.erb:9
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 221)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 586)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 3442)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 149)
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 221)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 3280)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:45:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1962)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 148)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 4033)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render "layouts/header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 148)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 222)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3297)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 1970)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1964)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1971)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 1967)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1965)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:47:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1973)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:48:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 151)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.0ms | Allocations: 66678)
+
+
+  
+ActionView::Template::Error (undefined method `partial' for #<#<Class:0x00007fc4dd3ae860>:0x00007fc4dd3acfb0>):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render partial "shared/header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:48:33 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms | Allocations: 66676)
+
+
+  
+ActionView::Template::Error (undefined method `partial' for #<#<Class:0x00007fc4dcdfe438>:0x00007fc4dcdfc980>):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render partial :"header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:48:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 148)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms | Allocations: 66676)
+
+
+  
+ActionView::Template::Error (undefined method `partial' for #<#<Class:0x00007fc4ddc75b10>:0x00007fc4ddc74198>):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render partial :"shared/header"%>
+    11:     <%= yield %>
+    12:   </body>
+    13: </html>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:48:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 148)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 222)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3302)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:49:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 151)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 221)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 19ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 3437)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:49:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2095)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:49:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2098)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:49:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 65)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2092)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:54:45 +0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 274)
+  Rendered shared/_header.html.erb (Duration: 1.9ms | Allocations: 234)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 65)
+Completed 200 OK in 73ms (Views: 56.6ms | ActiveRecord: 0.0ms | Allocations: 6180)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:55:11 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 149)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 3015)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:55:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 149)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 221)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3442)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:55:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2034)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:55:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2026)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:58:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 148)
+  Rendered shared/_header.html.erb (Duration: 1.9ms | Allocations: 221)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3432)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:58:10 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2029)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:58:17 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 149)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 224)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 3448)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-20 23:59:48 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 149)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 6817)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/mac/Rails/chapter3,4,5/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.1/app/views"
+  * "/Users/mac/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.1/app/views"
+):
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   </head>
+     9:   <body>
+    10:     <%render 'shared/header'%>
+    11: 
+    12: <header class="navbar navbar-fixed-topnavbar-inverse">
+    13:  <div class="container">
+  
+app/views/layouts/application.html.erb:10
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:00:05 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 148)
+  Rendered shared/_form.html.erb (Duration: 0.4ms | Allocations: 223)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3469)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:00:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2032)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:00:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2023)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:00:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2027)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:00:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 148)
+  Rendered shared/_form.html.erb (Duration: 0.5ms | Allocations: 221)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3440)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:07:05 +0700
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 274)
+  Rendered shared/_form.html.erb (Duration: 2.2ms | Allocations: 224)
+Completed 200 OK in 92ms (Views: 77.9ms | ActiveRecord: 0.0ms | Allocations: 14722)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:12:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 6240)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:12:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2042)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:12:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2049)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:12:27 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2041)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:12:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2041)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:14:33 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 7548)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:14:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:14:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2041)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:15:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 5954)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:15:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1917)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:15:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 1931)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:15:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 30)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 6220)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:15:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.3ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2041)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:15:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:16:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 7606)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:16:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2039)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:16:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5495)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:16:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:16:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1923)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 00:16:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 5427)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:38:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1917)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 1961)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1917)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1925)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1929)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1915)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:42 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1933)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:42 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1913)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:42 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1933)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:39:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1909)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:42:03 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 153)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 8430)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8: <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:43:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 5816)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> <!-- line #7-->
+     8:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:43:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 4644)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> <!-- line #7-->
+     8:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:43:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 4641)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> <!-- line #7-->
+     8:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:44:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 4641)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> <!-- line #7-->
+     8:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:44:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 4639)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> <!-- line #7-->
+     8:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:44:31 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 148)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 5780)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:45:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 148)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 5530)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag   'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:45:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 148)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5532)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag   'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8: <!--    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:  -->  </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:45:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4393)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag   'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8: <!--    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:  -->  </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:45:42 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 4389)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag   'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8: <!--    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:  -->  </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:45:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2469)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+      <title> <%=full_title yield :title%></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+ <%= stylesheet_link_tag   'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', media: '
+  </head>
+  <body>
+    <%=render 'shared/form'%>
+<!--
+<header class="navbar navbar-fixed-topnavbar-inverse">
+ <div class="container">
+       <%= link_to "sample app", "#", id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to"Home", "#" %></li>
+        <li><%= link_to"Help", "#" %></li>
+       <li><%= link_to"Log in", "#" %></li>
+      </ul>
+    </nav>
+ </div>
+</header> -->
+
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:          <title> <%=full_title yield :title%></title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:     <%= stylesheet_link_tag   'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', media: '
+8:      </head>
+9:      <body>
+10:        <%=render 'shared/form'%>
+11:    <!--
+12:    <header class="navbar navbar-fixed-topnavbar-inverse">
+13:     <div class="container">
+14:           <%= link_to "sample app", "#", id: "logo" %>
+15:        <nav>
+16:          <ul class="nav navbar-nav navbar-right">
+17:            <li><%= link_to"Home", "#" %></li>
+18:            <li><%= link_to"Help", "#" %></li>
+19:           <li><%= link_to"Log in", "#" %></li>
+20:          </ul>
+21:        </nav>
+22:     </div>
+23:    </header> -->
+24:    
+25:        <%= yield %>
+26:      </body>
+27:    </html>
+  
+app/views/layouts/application.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:18: unknown regexp option - l
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: unknown regexp option - l
+app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:22: unknown regexp options - dv
+app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:26: unknown regexp options - bdy
+app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:18: unknown regexp option - l
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: unknown regexp option - l
+app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:22: unknown regexp options - dv
+app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:26: unknown regexp options - bdy
+app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:18: unknown regexp option - l
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: unknown regexp option - l
+app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:22: unknown regexp options - dv
+app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:26: unknown regexp options - bdy
+app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:18: unknown regexp option - l
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: unknown regexp option - l
+app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:22: unknown regexp options - dv
+app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:26: unknown regexp options - bdy
+app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:18: unknown regexp option - l
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: unknown regexp option - l
+app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:22: unknown regexp options - dv
+app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:26: unknown regexp options - bdy
+app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:18: unknown regexp option - l
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: unknown regexp option - l
+app/views/layouts/application.html.erb:21: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:22: unknown regexp options - dv
+app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:26: unknown regexp options - bdy
+app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:46:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 148)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+  
+ActionView::Template::Error (The asset "application.scss.css" is not present in the asset pipeline.):
+    4:       <title> <%=full_title yield :title%></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:  <%= stylesheet_link_tag    'application.scss', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:    <%= javascript_include_tag 'application.scss', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:46:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 148)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+  
+ActionView::Template::Error (The asset "application.scss.css" is not present in the asset pipeline.):
+    4:       <title> <%=full_title yield :title%></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:  <%= stylesheet_link_tag    'application.scss', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8: <!--    <%= javascript_include_tag 'application.scss', 'data-turbolinks-track': 'reload' %>
+    9:  -->  </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:47:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 148)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 5661)
+
+
+  
+ActionView::Template::Error (The asset "application..js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:    <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:49:08 +0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 274)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.0ms | Allocations: 14063)
+
+
+  
+ActionView::Template::Error (The asset "application..js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:    <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:49:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 150)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5702)
+
+
+  
+ActionView::Template::Error (The asset "application..js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   <!--  <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %> -->
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:49:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 149)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4386)
+
+
+  
+ActionView::Template::Error (The asset "application.scss.css" is not present in the asset pipeline.):
+    4:       <title> <%=full_title yield :title%></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:  <%= stylesheet_link_tag    'application.scss', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <!--  <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %> -->
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:49:42 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3244)
+
+
+  
+ActionView::Template::Error (The asset "application.scss.css" is not present in the asset pipeline.):
+    4:       <title> <%=full_title yield :title%></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:  <%= stylesheet_link_tag    'application.scss', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <!--  <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %> -->
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:49:42 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 30)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3246)
+
+
+  
+ActionView::Template::Error (The asset "application.scss.css" is not present in the asset pipeline.):
+    4:       <title> <%=full_title yield :title%></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:  <%= stylesheet_link_tag    'application.scss', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <!--  <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %> -->
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:49:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 149)
+Completed 500 Internal Server Error in 914ms (ActiveRecord: 0.0ms | Allocations: 63992)
+
+
+  
+ActionView::Template::Error (The asset "application..js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   <!--  <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %> -->
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:50:03 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 7324)
+
+
+  
+ActionView::Template::Error (The asset "application..js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   <!--  <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %> -->
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:50:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 7276)
+
+
+  
+ActionView::Template::Error (The asset "application..js" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:   <!--  <%= javascript_include_tag 'application.', 'data-turbolinks-track': 'reload' %> -->
+     9:   </head>
+    10:   <body>
+    11:     <%=render 'shared/form'%>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2020-05-21 06:50:22 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 148)
+  Rendered shared/_form.html.erb (Duration: 1.8ms | Allocations: 224)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 6067)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-21 06:55:29 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.5ms | Allocations: 97)
+  Rendered shared/_form.html.erb (Duration: 2.2ms | Allocations: 221)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 5848)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-21 06:55:30 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_form.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4554)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-21 09:49:04 +0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 274)
+  Rendered shared/_form.html.erb (Duration: 2.1ms | Allocations: 231)
+Completed 200 OK in 192ms (Views: 185.6ms | ActiveRecord: 0.0ms | Allocations: 18118)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 11:35:58 +0700
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 65.5ms | Allocations: 7997)
+  Rendered shared/_header.html.erb (Duration: 2.1ms | Allocations: 234)
+Completed 200 OK in 1214ms (Views: 1201.1ms | ActiveRecord: 0.0ms | Allocations: 78454)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 12:01:38 +0700
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 33.7ms | Allocations: 3878)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 229)
+Completed 200 OK in 1042ms (Views: 1031.3ms | ActiveRecord: 0.0ms | Allocations: 66995)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 12:01:41 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5002)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 12:01:42 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 57)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 5600)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 12:01:43 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 66)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 5066)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 12:01:44 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 4979)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 12:01:45 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 4993)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 14:20:08 +0700
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 312)
+  Rendered shared/_header.html.erb (Duration: 2.0ms | Allocations: 229)
+Completed 200 OK in 1147ms (Views: 1134.5ms | ActiveRecord: 0.0ms | Allocations: 68060)
+
+
+Started GET "/loggin_app/home" for ::1 at 2020-05-22 14:25:36 +0700
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/loggin_app/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home" for ::1 at 2020-05-22 14:25:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 198)
+  Rendered shared/_header.html.erb (Duration: 1.6ms | Allocations: 229)
+Completed 200 OK in 132ms (Views: 129.3ms | ActiveRecord: 0.0ms | Allocations: 12533)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 14:25:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4842)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 14:25:42 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 57)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5485)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 14:25:45 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 66)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 14:25:46 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 14:25:48 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 4833)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:29:34 +0700
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 426)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 232)
+Completed 200 OK in 1075ms (Views: 1053.0ms | ActiveRecord: 0.0ms | Allocations: 69594)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:51 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 57)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5490)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:29:51 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4823)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:52 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 4838)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:53 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:29:54 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 4844)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:54 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 4840)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:29:55 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 4837)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:55 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4830)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:29:56 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:57 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4824)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:29:57 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 4832)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:57 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4842)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:29:58 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4824)
+
+
+Started GET "/static_pages/home?locale=vi" for ::1 at 2020-05-22 15:29:58 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4830)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:29:59 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 4829)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:01 +0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:04 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:35 +0700
+  
+NoMethodError (undefined method `t' for #<ActionDispatch::Routing::Mapper:0x00007fe572908e40>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:36:57 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 179)
+  Rendered shared/_header.html.erb (Duration: 2.1ms | Allocations: 1066)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 7456)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    1: <header class="navbar navbar-fixed-top navbar-inverse">
+    2:     <div class="container">
+    3:       <%= link_to t"users.index.text_sample", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"users.index.text_home", "#" %></li>
+  
+app/views/shared/_header.html.erb:3
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:37:49 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 909)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 6141)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    1: <header class="navbar navbar-fixed-top navbar-inverse">
+    2:     <div class="container">
+    3:       <%= link_to t"users.index.text_sample", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"users.index.text_home", "#" %></li>
+  
+app/views/shared/_header.html.erb:3
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:38:10 +0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 26.5ms | Allocations: 3755)
+  Rendered shared/_header.html.erb (Duration: 5.1ms | Allocations: 1369)
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.0ms | Allocations: 17813)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    1: <header class="navbar navbar-fixed-top navbar-inverse">
+    2:     <div class="container">
+    3:       <%= link_to t"users.index.text_sample", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"users.index.text_home", "#" %></li>
+  
+app/views/shared/_header.html.erb:3
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:38:38 +0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:38:40 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:39:32 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 909)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 6176)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    1: <header class="navbar navbar-fixed-top navbar-inverse">
+    2:     <div class="container">
+    3:       <%= link_to t"users.index.text_sample", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"users.index.text_home", "#" %></li>
+  
+app/views/shared/_header.html.erb:3
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:40:02 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 175)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 1110)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 7067)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    1: <header class="navbar navbar-fixed-top navbar-inverse">
+    2:     <div class="container">
+    3:       <%= link_to t"users.index.text_sample", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"users.index.text_home", "#" %></li>
+  
+app/views/shared/_header.html.erb:3
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:40:29 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 1130)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 7079)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    3:       <%= link_to "Sign in ", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"users.index.text_home", "#" %></li>
+    7:           <li><%= link_to t"users.index.text_help", "#" %></li>
+    8:           <li><%= link_to t"users.index.text_loggin", "#" %></li>
+    9:         </ul>
+  
+app/views/shared/_header.html.erb:6
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:41:58 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 223)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 6208)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:41:59 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 4839)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:42:00 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 4840)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:42:00 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4822)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:42:13 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5314)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:42:14 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4827)
+
+
+Started GET "/static_pages/home?locale=en" for ::1 at 2020-05-22 15:43:46 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 179)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 220)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 6189)
+
+
+Started GET "/static_pages/help?locale=en" for ::1 at 2020-05-22 15:43:51 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 171)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 5096)
+
+
+Started GET "/static_pages/help?locale=en" for ::1 at 2020-05-22 15:43:52 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4830)
+
+
+Started GET "/static_pages/help?locale=en" for ::1 at 2020-05-22 15:43:52 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 4821)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:47:18 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 175)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 233)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 6535)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:49:05 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 180)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 312)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 6622)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:49:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 1129)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 7078)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    3:       <%= link_to "Sign in", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"Home", "#" %></li>
+    7:           <li><%= link_to "Help", "#" %></li>
+    8:           <li><%= link_to "Loggin", "#" %></li>
+    9:         </ul>
+  
+app/views/shared/_header.html.erb:6
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:49:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 306)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 6292)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:49:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 310)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 6276)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:49:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 146)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 4916)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:50:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 1130)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 7068)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    3:       <%= link_to "Sign in", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t"link_home", "#" %></li>
+    7:           <li><%= link_to "Help", "#" %></li>
+    8:           <li><%= link_to "Loggin", "#" %></li>
+    9:         </ul>
+  
+app/views/shared/_header.html.erb:6
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:50:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 2.9ms | Allocations: 1130)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 7080)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    3:       <%= link_to "Sign in", "#", id: "logo" %>
+    4:       <nav>
+    5:         <ul class="nav navbar-nav navbar-right">
+    6:           <li><%= link_to t".link_home", "#" %></li>
+    7:           <li><%= link_to "Help", "#" %></li>
+    8:           <li><%= link_to "Loggin", "#" %></li>
+    9:         </ul>
+  
+app/views/shared/_header.html.erb:6
+app/views/layouts/application.html.erb:11
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:57:42 +0700
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 312)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 248)
+Completed 200 OK in 155ms (Views: 143.1ms | ActiveRecord: 0.0ms | Allocations: 13274)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:58:46 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 176)
+  Rendered shared/_header.html.erb (Duration: 16.9ms | Allocations: 1647)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 7940)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 15:58:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 1519)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 6299)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:00:26 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 2.2ms | Allocations: 1902)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 7169)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:00:30 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 3.2ms | Allocations: 1950)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 6722)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:00:33 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 181)
+  Rendered shared/_header.html.erb (Duration: 4.3ms | Allocations: 2077)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 8383)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:00:46 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 177)
+  Rendered shared/_header.html.erb (Duration: 2.4ms | Allocations: 1707)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 7761)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:00:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 851)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 6816)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:01:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 174)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 855)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 6825)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:03:00 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 175)
+  Rendered shared/_header.html.erb (Duration: 2.5ms | Allocations: 798)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 7201)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:03:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 691)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5497)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:03:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 691)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5490)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:03:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 691)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5490)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:04:18 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1275)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2614)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    1: <% provide :title,'Home'%>
+    2: <div class="center jumbotron">
+    3:   <%= t ('users.index.link_html')%>
+    4:   <%= link_to t"text_sign", '#', class: "btn btn-lg btn-primary" %>
+    5: </div>
+  
+app/views/static_pages/home.html.erb:4
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:04:33 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 991)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2337)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title,'Home'%>
+<div class="center jumbotron">
+  <%= t ('users.index.link_html')%>
+  <%= link_to t("text_sign)", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+):
+1:    <% provide :title,'Home'%>
+2:    <div class="center jumbotron">
+3:      <%= t ('users.index.link_html')%>
+4:      <%= link_to t("text_sign)", '#', class: "btn btn-lg btn-primary" %>
+5:    </div>
+  
+app/views/static_pages/home.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/static_pages/home.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/static_pages/home.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/static_pages/home.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/static_pages/home.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/static_pages/home.html.erb:8: syntax error, unexpected `end', expecting ')'
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:04:45 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 194)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 850)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 7245)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-05-22 16:04:52 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.2ms | Allocations: 172)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 691)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 5757)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-22 16:06:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 691)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5514)
+
+
+Started GET "/static_pages/home" for ::1 at 2020-05-23 07:41:38 +0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 40.8ms | Allocations: 3998)
+  Rendered shared/_header.html.erb (Duration: 2.9ms | Allocations: 818)
+Completed 200 OK in 1450ms (Views: 1436.8ms | ActiveRecord: 0.0ms | Allocations: 69097)
+
+

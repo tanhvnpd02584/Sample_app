@@ -1,13 +1,18 @@
 en:
-  base_tilte: "Ruby on Rails Tutorial Sample App"
-  redirect_home: "static_pages/home"
-  redirect_help: "static_pages/help"
+  base_title: "Ruby on Rails Tutorial Sample App"
   text_home: "Home"
   text_help: "Help"
   text_loggin: "Loggin"
   text_english: "English"
   text_vietnamese: "Vietnamese"
   text_sign: "Sign up now!"
+  text_sample: "Sample App"
+  text_signup: "Sign-up"
+  text_name: "Name:"
+  text_email: "Email:"
+  text_password: "Password:"
+  text_Comfirmpassword: "Comfirmpassword"
+  text_button_account: "Create my account"
   users:
     index:
       welcom: "Welcome to the Sample App"
@@ -18,6 +23,20 @@ en:
       text: "We allwways with you to use website contact with you"
       link_html: <h2>This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application</h2>
 vi:
+  base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  text_home: "Trang chủ"
+  text_help: "giúp đỡ"
+  text_loggin: "Đăng nhập"
+  text_english: "Tiếng anh"
+  text_vietnamese: "Tiếng Việt"
+  text_sign: "Đăng nhập ngay!"
+  text_sample: "Ứng dụng Sample"
+  text_signup: "Đăng ký"
+  text_name: "Họ Và tên:"
+  text_email: "Email:"
+  text_password: "Mật Khẩu:"
+  text_Comfirmpassword: "Xác Nhận Mật Khẩu"
+  text_button_account: "Tạo tài khoản"
   users:
     index:
       help: "Help"

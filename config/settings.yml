@@ -1,0 +1,4 @@
+email_max_length: 50
+name_max_length: 30
+password_max_length: 13
+

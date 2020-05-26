@@ -8,6 +8,7 @@ en:
   text_sign: "Sign up now!"
   text_sample: "Sample App"
   text_signup: "Sign-up"
+<<<<<<< HEAD
   text_button_account: "Create my account"
   text_welcome: "Welcome to sampe app !"
   users:
@@ -17,6 +18,15 @@ en:
       password: "Password:"
       confirmpassword: "Confirmpassword:"
       text_welcome: "Welcome to sampe app !"
+=======
+  text_name: "Name:"
+  text_email: "Email:"
+  text_password: "Password:"
+  text_Comfirmpassword: "Comfirmpassword"
+  text_button_account: "Create my account"
+  users:
+    index:
+>>>>>>> 0cc3c62a102ae874de932e0b70c15767e415dd66
       welcom: "Welcome to the Sample App"
       homepage: "This is the home page for the"
       sample: "Sample tutorial"
@@ -34,6 +44,7 @@ vi:
   text_sign: "Đăng nhập ngay!"
   text_sample: "Ứng dụng Sample"
   text_signup: "Đăng ký"
+<<<<<<< HEAD
   text_button_account: "Tạo tài khoản"
   text_welcome: "Chào mừng bạn đến với Sample App !"
   users:
@@ -42,6 +53,15 @@ vi:
       email: "Địa chỉ Email:"
       password: "Mật Khẩu:"
       confirmpassword: "Xác nhận lại mật khẩu:"
+=======
+  text_name: "Họ Và tên:"
+  text_email: "Email:"
+  text_password: "Mật Khẩu:"
+  text_Comfirmpassword: "Xác Nhận Mật Khẩu"
+  text_button_account: "Tạo tài khoản"
+  users:
+    index:
+>>>>>>> 0cc3c62a102ae874de932e0b70c15767e415dd66
       help: "Help"
       welcom: "Chào mừng bạn đến với Sample"
       sample: "Hướng Dẫn Mẫu"

@@ -1,0 +1,14 @@
+<% provide(:title, t("text_loggin")) %>
+<h2><%= t "text_loggin" %></h2>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+  <%= form_for(:session, url: login_path) do |f| %>
+    <%= f.label :email %>
+    <%= f.email_field :email, class: "form-control" %>
+    <%= f.label :password %>
+    <%= f.password_field :password, class: "form-control" %>
+    <%= f.submit t("text_loggin"), class: "btn btn-primary" %>
+  <% end %>
+    <p><%= t "text_new_user" %> <%= link_to t("text_sign"), new_user_path %></p>
+  </div>
+</div>

@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     return if @user
+
     flash[:danger] = t "error_user"
     redirect_to root_path
   end
@@ -24,6 +25,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:name, :email, :password,
-     :password_confirmation)
+                                 :password_confirmation)
   end
 end

@@ -11,7 +11,19 @@ en:
   text_button_account: "Create my account"
   text_welcome: "Welcome to sampe app !"
   error_params: " Form raise error: %{errors}"
-  error_user: "Can't not find user"
+  text_logout: "Logout"
+  error_ep: "invalid email or password"
+  text_new_user: "new user?"
+  text_profile: "Profile"
+  text_settings: "Settings"
+  text_account: "Account"
+  activerecord:
+    models:
+      users:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        confirmpassword: "Confirmpassword"
   users:
     index:
       name: "Name:"
@@ -39,7 +51,12 @@ vi:
   text_button_account: "Tạo tài khoản"
   text_welcome: "Chào mừng bạn đến với Sample App !"
   error_params: " Form cua ban co loi: %{errors}"
-  error_user: "Khong the tim thay user"
+  text_logout: "Đăng xuất"
+  error_ep: "Không đúng email hoặc Password"
+  text_new_user: "Tạo mới ngừoi "
+  text_profile: "Hồ Sơ"
+  text_settings: "Cài đặt"
+  text_account: "Tài Khoản"
   users:
     index:
       name: "Tên đăng nhập:"

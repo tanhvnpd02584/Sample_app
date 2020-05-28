@@ -17,6 +17,7 @@ en:
   text_profile: "Profile"
   text_settings: "Settings"
   text_account: "Account"
+  text_remember_me: "Remember me on this computer"
   activerecord:
     models:
       users:
@@ -57,6 +58,7 @@ vi:
   text_profile: "Hồ Sơ"
   text_settings: "Cài đặt"
   text_account: "Tài Khoản"
+  text_remember_me: "Lưu lại tài khoản"
   users:
     index:
       name: "Tên đăng nhập:"

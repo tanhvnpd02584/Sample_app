@@ -1,6 +1,6 @@
 class PasswordResetsController < ApplicationController
   before_action :load_user, :valid_user,
-   :check_expiration, only: %i(edit update)
+                :check_expiration, only: %i(edit update)
 
   def new; end
 

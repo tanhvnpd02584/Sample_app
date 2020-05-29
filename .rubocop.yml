@@ -32,7 +32,10 @@ AllCops:
     - '**/.DS_Store'
     - '**/.keep'
     - 'Gemfile'
-
+    - 'node_modules'
+    - 'node_modules/rails-erb-loader/Gemfile'
+    - 'node_modules/rails-erb-loader/test/runner'
+    - 'Gemfile.lock'
 # Indent private/protected/public as deep as method definitions
 Layout/AccessModifierIndentation:
   EnforcedStyle: indent

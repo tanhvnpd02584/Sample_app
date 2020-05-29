@@ -34,7 +34,7 @@ default: &default
     - .woff2
 
   extensions:
-    - .vue
+    - .erb
     - .mjs
     - .js
     - .sass

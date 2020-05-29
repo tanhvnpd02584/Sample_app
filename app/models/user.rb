@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
+  has_many :microposts, dependent: :destroy
   has_secure_password
 
   validates :email, length: {maximum: Settings.email_max_length}
@@ -27,6 +28,10 @@ class User < ApplicationRecord
     def User.new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def display_image
+    image.variant(resize_to_limit: [500, 500])
   end
 
   def remember
@@ -60,7 +65,7 @@ class User < ApplicationRecord
   def create_reset_digest
     self.reset_token = User.new_token
     update_columns reset_digest: User.digest(reset_token),
-                   reset_sent_at: Time.zone.now
+    reset_sent_at: Time.zone.now
   end
 
   # send password da reset den email
@@ -71,6 +76,11 @@ class User < ApplicationRecord
   # Return true if reset_sent_at < 2 hours
   def password_reset_expired?
     reset_sent_at < Settings.time_enpired.hours.ago
+  end
+
+  # Find micropost by id
+  def feed
+    Micropost.feed_user(id)
   end
 
   private

@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by email:
-            params[:session][:email].downcase
+    params[:session][:email].downcase
     if @user&.authenticate params[:session][:password]
       if @user.activated?
         log_in @user
@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
         redirect_back_or @user
       else
         flash[:warning] = t "text_activation"
-        redirect_to root_url
+        redirect_to home_url
       end
     else
       flash.now[:danger] = t "error_ep"
@@ -21,6 +21,6 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out if logged_in?
-    redirect_to root_url
+    redirect_to home_url
   end
 end

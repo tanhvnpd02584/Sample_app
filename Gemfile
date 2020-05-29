@@ -13,7 +13,11 @@ gem "jquery-rails", "4.3.1"
 gem "mysql2", "~> 0.4.4"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.3", ">= 6.0.3.1"
+gem "image_processing", "1.9.3"
+gem "mini_magick", "4.9.5"
+gem "active_storage_validations", "0.8.2"
 gem "rails-i18n"
+gem "i18n-js"
 gem "rubocop", "~> 0.74.0", require: false
 gem "rubocop-rails", "~> 2.3.2", require: false
 gem "sass-rails", ">= 6"

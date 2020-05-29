@@ -17,6 +17,12 @@ en:
   text_profile: "Profile"
   text_settings: "Settings"
   text_account: "Account"
+  text_remember_me: "Remember me on this computer"
+  text_save: "Save changes"
+  text_edit: "Edit user"
+  text_require_login: "Please log in."
+  users_all: "All Users"
+  users_delete: "User deleted"
   activerecord:
     models:
       users:
@@ -57,6 +63,12 @@ vi:
   text_profile: "Hồ Sơ"
   text_settings: "Cài đặt"
   text_account: "Tài Khoản"
+  text_remember_me: "Lưu lại tài khoản"
+  text_save: "Lưu lại thay đổi"
+  text_edit: "Chỉnh sửa thông tin "
+  text_require_login: "Làm ơn đăng nhập."
+  users_all: "Tất cả người dung"
+  users_delete: "Đã xoá người dùng"
   users:
     index:
       name: "Tên đăng nhập:"

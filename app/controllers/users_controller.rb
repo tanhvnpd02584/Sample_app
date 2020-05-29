@@ -37,6 +37,7 @@ class UsersController < ApplicationController
     end
   end
 
+  # delete user
   def destroy
     if @user.destroy
       flash[:success] = t "text_deleted"
@@ -54,7 +55,7 @@ class UsersController < ApplicationController
   end
 
   def logged_in_user
-    return unless logged_in?
+    return if logged_in?
 
     store_location
     flash[:danger] = t "text_pls"

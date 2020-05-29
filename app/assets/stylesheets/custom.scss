@@ -4,6 +4,7 @@
 $whi: #fff;
 $color_red: red;
 $lowerred: #bbb;
+$graylight: gray-lighter;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -120,4 +121,13 @@ color: $color_red;
 #session_remember_me {
 margin-left: 0;
   width: auto;
+}
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $graylight;
+  }
 }

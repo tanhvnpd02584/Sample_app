@@ -68,6 +68,9 @@ en:
     text_micropost_name: "Microposts"
     text_micropost_textarea: "Compose new micropost..."
     text_micropost_post: "Post"
+  follow:
+    text_following: "following"
+    text_followers: "followers"
   activerecord:
     models:
       users:
@@ -156,6 +159,9 @@ vi:
     text_micropost_question_sure: "you sure?"
     text_micropost_feed: "view my profile"
     text_micropost_name: "microposts"
+  follow:
+    text_following: "following"
+    text_followers: "followers"
   users:
     index:
       name: "Tên đăng nhập:"

@@ -1,15 +1,20 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
+  before_action :logged_in_user, only: [:edit, :update, :destroy]
+  before_action :load_user, except: %i(new index create)
+  before_action :correct_user, only: [:edit, :update]
+  before_action :admin_user, only: :destroy
 
-    flash[:danger] = t "error_user"
-    redirect_to root_path
+  def show; end
+
+  def index
+    @users = User.paginate(page: params[:page], per_page: Settings.per_page)
   end
 
   def new
     @user = User.new
   end
+
+  def edit; end
 
   def create
     @user = User.new user_params
@@ -21,10 +26,55 @@ class UsersController < ApplicationController
     end
   end
 
+  def update
+    if @user.update(user_params)
+      flash[:success] = t "text_updated"
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t "text_deleted"
+    else
+      flash[:danger] = t "error.delete_user"
+    end
+    redirect_to users_url
+  end
+
   private
 
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
+  end
+
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = t "text_pls"
+      redirect_to login_url
+    end
+  end
+
+  def correct_user
+    return if current_user? @user
+
+    flash[:danger] = t "text_user_notcorrect"
+    redirect_to root_url
+  end
+
+  def load_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t "error.invalid_ID"
+    redirect_to root_url
+  end
+
+  def admin_user
+    redirect_to(root_url) unless current_user.admin?
   end
 end

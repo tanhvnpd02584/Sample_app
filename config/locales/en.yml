@@ -18,6 +18,17 @@ en:
   text_settings: "Settings"
   text_account: "Account"
   text_remember_me: "Remember me on this computer"
+  text_save: "Save changes"
+  text_edit: "Edit User"
+  text_create: "Create my account"
+  text_updated: "Profile updated"
+  text_pls: "Please log in."
+  text_allU: "All  Users"
+  text_deleted: "User Deleted"
+  error.delete_user: "Can not deleted"
+  text_user_permit: "User is not permit"
+  text_user_notcorrect: "User not correct"
+  text_comfirm: "Confirmation"
   activerecord:
     models:
       users:
@@ -59,6 +70,16 @@ vi:
   text_settings: "Cài đặt"
   text_account: "Tài Khoản"
   text_remember_me: "Lưu lại tài khoản"
+  text_save: "Luu thay doi"
+  text_create: "Tao moi tai khoan"
+  text_updated: "Thay doi thanh cong"
+  text_pls: "Lam on dang nhap"
+  text_allU: "Tat ca nguoi dung"
+  text_deleted: "Da Xoa User"
+  error.delete_user: "Khong the xoa"
+  text_user_permit: "User khong duoc phep"
+  text_user_notcorrect: "User k chinh xac"
+  text_comfirm: "Xac nhan"
   users:
     index:
       name: "Tên đăng nhập:"

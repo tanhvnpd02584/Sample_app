@@ -64,3 +64,6 @@ log
 node_modules
 public/
 
+
+# Ignore application configuration
+/config/application.yml

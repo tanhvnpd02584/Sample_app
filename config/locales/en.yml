@@ -29,6 +29,16 @@ en:
   text_user_permit: "User is not permit"
   text_user_notcorrect: "User not correct"
   text_comfirm: "Confirmation"
+  text_activation: "Account not activated. check your email for the activation link"
+  text_welcome_active: "Welcome to the Sample App! Click on the link below to activate your account:"
+  text_activate_info: "Please check your email to activate your account"
+  text_activate_success: "Account activated!"
+  text_activate_failed: "Invalid activation link"
+  text_label_activate: "Account activation"
+  text_update_profile: "Update your profile"
+  text_active_link_to: "Activate"
+  text_delete_link_to: "delete"
+  text_you_sure: "You sure?"
   activerecord:
     models:
       users:
@@ -80,6 +90,21 @@ vi:
   text_user_permit: "User khong duoc phep"
   text_user_notcorrect: "User k chinh xac"
   text_comfirm: "Xac nhan"
+  text_activation: "Tai khoan chua duoc kich hoat. click vao link de kich hoat tai khoan"
+  text_welcome_active: "chao mung ban den voi sample_app, click vao link duoi day de kich hoat tai khoan"
+  text_activate_info: "Lam on kiem tra email de kich hoat tai khoan"
+  text_activate_success: "tai khoan da activated"
+  text_activate_failed: "link activation khong dung"
+  text_label_activate: "Kich hoat tai khoan"
+  text_update_profile: "Cap nhat thong tin của ban "
+  text_active_link_to: "Kich hoat"
+  activerecord:
+    models:
+      users:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        confirmpassword: "Confirmpassword"
   users:
     index:
       name: "Tên đăng nhập:"

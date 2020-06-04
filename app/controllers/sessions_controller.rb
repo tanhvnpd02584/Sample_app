@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by email:
-      params[:session][:email].downcase
+            params[:session][:email].downcase
     if @user&.authenticate params[:session][:password]
       if @user.activated?
         log_in @user

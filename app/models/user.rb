@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
   has_secure_password
 
   validates :email, length: {maximum: Settings.email_max_length}
@@ -8,8 +8,8 @@ class User < ApplicationRecord
   validates :name, length: {maximum: Settings.name_max_length}
   validates :name, presence: true
   validates :password, presence: true,
-                      length: {maximum: Settings.password_max_length},
-                      allow_nil: true
+                       length: {maximum: Settings.password_max_length},
+                       allow_nil: true
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -54,6 +54,23 @@ class User < ApplicationRecord
   # send activations email
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  # update reset_digest encrypt and reset_sent_at time now
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
+  end
+
+  # send password da reset den email
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  # Return true if reset_sent_at < 2 hours
+  def password_reset_expired?
+    reset_sent_at < Settings.time_enpired.hours.ago
   end
 
   private

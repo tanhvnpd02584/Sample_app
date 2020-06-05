@@ -1,10 +1,13 @@
 class Micropost < ApplicationRecord
+
   # relationships
   belongs_to :user
   has_one_attached :image
 
   scope :by_created_at, ->{order(created_at: :desc)}
   scope :feed_user, ->(id){where "user_id = ?", "#{id}"}
+  scope :feed_user, -> (following_ids, id)
+   {where "user_id IN (?) OR user_id = ?", following_ids, id}
 
   # validates
   validates :user_id, presence: true

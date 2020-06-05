@@ -8,6 +8,18 @@ class UsersController < ApplicationController
     @microposts = @user.microposts.paginate(page: params[:page])
   end
 
+  def following
+    @title = "Following"
+    @users = @user.following.paginate(page: params[:page])
+    render "_show_follow"
+  end
+
+  def followers
+    @title = "Followers"
+    @users = @user.followers.paginate(page: params[:page])
+    render "_show_follow"
+  end
+
   def index
     @users = User.paginate(page: params[:page], per_page: Settings.per_page)
   end
@@ -53,7 +65,7 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:name, :email, :password,
-     :password_confirmation)
+      :password_confirmation)
   end
 
   def logged_in_user
@@ -81,5 +93,6 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to(root_url) unless current_user.admin?
+
   end
 end

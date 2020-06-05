@@ -3,3 +3,6 @@ name_max_length: 30
 password_max_length: 13
 per_page: 6
 time_enpired: 2
+file_valid: "%w[image/jpeg image/gif image/png]"
+image_size: 50
+size_content: 140
